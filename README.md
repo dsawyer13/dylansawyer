@@ -1,7 +1,9 @@
 # DylanSawyer.me
-##My personal portfolio website
+## www.dylansawyer.me
 
-##Built with:
+## My personal portfolio website
+
+## Built with:
 *HTML5
 *CSS3
 *jQuery
