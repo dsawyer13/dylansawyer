@@ -1,9 +1,14 @@
-# DylanSawyer.me
-## www.dylansawyer.me
+# dylansawyer.me
+My personal portfolio website.  Built with 99% CSS and HTML.
 
-## My personal portfolio website
+## Live
+https://dylansawyer.me
+
+## Screenshots
+
+![Landing Page](https://imgur.com/Gdeu1xl.png)
 
 ## Built with:
-*HTML5
-*CSS3
-*jQuery
+* HTML5
+* CSS3
+* jQuery
