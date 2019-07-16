@@ -21,22 +21,33 @@ html, body {
   position: relative;
 }
 
+
+/* header styles */
 header {
   padding-left: 30px;
-  font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(17px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
   height: 100vh;
   text-align: left;
 }
 
-.container {
-  margin: 0;
-  min-height: 100%;
-  background: #9D50BB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
+.header-button {
+  font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
+  border: 1px solid transparent;
+  background-color: #45aaf2;
+  color: white;
+  margin-top:25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
+.header-button:hover {
+  background-color: #0984e3;
+}
+
+/* colors for hero text */
 .colored1 {
   color: #fc5c65;
 }
@@ -57,6 +68,29 @@ header {
   font-size: 60px;
 }
 
+
+/* nav styles */
+nav ul {
+  background-color: #2c3e50;
+  color: #2c3e50;
+  margin: 0 auto;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.container {
+  margin: 0;
+  min-height: 100%;
+  background: #9D50BB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+}
+
 section img {
   width: 100%;
   max-width: 500px;
@@ -69,12 +103,6 @@ ul {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-}
-
-nav ul {
-  background-color: #2c3e50;
-  color: #2c3e50;
-  margin: 0 auto;
 }
 
 li {
@@ -96,29 +124,10 @@ h1 {
   margin-bottom: 1.2em;
 }
 
-
-
 .subtitles {
   font-size: 1.5em;
   padding: 10px 4px;
   margin-bottom: 10px;
-}
-
-.header-button {
-  font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: bold;
-  border: 1px solid transparent;
-  background-color: #45aaf2;
-  color: white;
-  margin-top:25px;
-  padding: 10px 20px;
-  cursor: pointer;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
-
-.header-button:hover {
-  background-color: #0984e3;
 }
 
 .card {
@@ -203,11 +212,6 @@ h2 {
   color: #FFFFFF;
 }
 
-nav a{
-  color: white;
-  text-decoration: none;
-}
-
 footer {
   font-size: 12px;
   background-color: #333333;
@@ -224,6 +228,19 @@ footer {
 .mobile-show {
   display: static;
 }
+
+.consearch-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url('./images/CS1.png') bottom;
+  text-indent: -99999px;
+}
+
+.consearch-img:hover {
+  background-position: 0 0;
+}
+
 
 
 @media only screen and (min-width:784px)  {

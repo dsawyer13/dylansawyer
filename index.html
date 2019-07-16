@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="flex.css"
     <link rel="stylesheet" href="devicon.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,52 +25,55 @@
           <a href="https://www.linkedin.com/in/dylan-sawyer-923268161" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:dsawyer@tutanota.com">
+          <a href="mailto:sawyer.dylan@aol.com">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
       </nav>
       <header role="banner">
-        <h1>Hi, I'm <span class="colored1">Dylan.</span><br>
-          I am a<br class="hide mobile-show">
-          Full-Stack<br>
-          <span class="colored2">Web Developer</span><br>
-          <span class="bigAmp">&</span><br class="hide mobile-show">
-          <span class="colored3 designer">Designer</span><br>
-          based in <span class="colored4">Atlanta.</span></h1>
-        <button class="header-button">See My Work</button>
+        <div class='hero'>
+          <h1>Hi, I'm <span class="colored1">Dylan.</span><br>
+            I am a<br class="hide mobile-show">
+            Full-Stack<br>
+            <span class="colored2">Web Developer</span><br>
+            <span class="bigAmp">&</span><br class="hide mobile-show">
+            <span class="colored3 designer">Designer</span><br>
+            based in <span class="colored4">Atlanta.</span></h1>
+          <button class="header-button">See My Work</button>
+        </div>
       </header>
+
       <div class="container">
         <section class="about">
-          <h2>About me</h2>
-          <div>
-            <p>I am a web developer who recently graduated from the Full-Stack Developer bootcamp at Thinkful.
-            I also have a Bachelor's Degree in Management Information Systems.</p>
-            <p>Whether I'm working on the front or back end I always have a blast.
-            My development experience has primarly
-            focused on Javascript, jQuery, React, Node.js, and MongoDB.</p>
-          </div>
-        </section>
+            <h2>About me</h2>
+            <div class='about'>
+                <p>I am a web developer who recently graduated from the Full-Stack Developer bootcamp at Thinkful.
+                I also have a Bachelor's Degree in Management Information Systems.</p>
+                <p>Whether I'm working on the front or back end I always have a blast.
+                My development experience has primarly
+                focused on Javascript, jQuery, React, Node.js, and MongoDB.</p>
+            </div>
+        </section>  
         <section class="portfolio">
           <h2 class="project-head">Projects</h2>
-          <div class="find-local-concerts card">
-            <a href="https://dsawyer13.github.io/find-local-concerts/" target="_blank">
-              <img src="./images/FLC.png" alt="Find Local Concerts">
+          <div class="consearch card">
+            <a href="https://consearch.dsawyer.now.sh/" target="_blank">
+              <img src="./images/CS1.png" onmouseover="this.src='./images/CS2.png'" onmouseout="this.src='./images/CS1.png'" alt="ConSearch">
             </a>
-            <div class="subtitles">Find Local Concerts</div>
+            <div class="subtitles">ConSearch</div>
             <ul>
-              <li><i class="devicon-javascript-plain"></i></li>
-              <li><i class="devicon-jquery-plain"></i></li>
+              <li><i class="devicon-react-plain"></i></li>
               <li><i class="devicon-html5-plain"></i></li>
-              <li><i class="devicon-css3-plain"></i></li>
+              <li><i class="devicon-sass-plain"></i></li>
             </ul>
             <a class="demo" href='https://dsawyer13.github.io/find-local-concerts/' target="_blank">Demo</a>
             <a class="view-code" href='https://github.com/dsawyer13/find-local-concerts' target="_blank">Code</a>
           </div>
+
           <div class="progift card">
             <div class="image-container">
               <a href='https://progift.herokuapp.com/' target="_blank">
-                <img src="./images/PG.png" alt="Pro Gift">
+                <img src="./images/PG1.png" onmouseover="this.src='./images/PG2.png'" onmouseout="this.src='./images/PG1.png'" alt="Pro Gift">
               </a>
             </div>
             <div class="subtitles">ProGift</div>
@@ -82,9 +86,10 @@
             <a class="demo" href='https://progift.herokuapp.com/' target="_blank">Demo</a>
             <a class="view-code" href='https://github.com/dsawyer13/pro-gift' target="_blank">Code</a>
           </div>
+
           <div class="workout-pal card">
             <a href='https://workoutpal.herokuapp.com/' target="_blank">
-              <img src="./images/WP.png" alt="Workout Pal">
+              <img src="./images/WP1.png" onmouseover="this.src='./images/WP2.png'" onmouseout="this.src='./images/WP1.png'" alt="Workout Pal">
             </a>
             <div class="subtitles">WorkoutPal</div>
             <ul>
