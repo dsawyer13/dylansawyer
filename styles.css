@@ -3,7 +3,7 @@
 }
 
 html {
-  min-height: 100%
+  min-height: 100%;
 }
 
 body {
@@ -16,11 +16,10 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  line-height:2.8rem;
+  line-height: 2.8rem;
   color: #ecf0f1;
   position: relative;
 }
-
 
 /* header styles */
 header {
@@ -30,13 +29,14 @@ header {
   text-align: left;
 }
 
-.header-button {
-  font-size: calc(24px + (34 - 24) * ((100vw - 300px) / (1600 - 300)));
+.header-button,
+.resume-button {
+  font-size: calc(20px + (34 - 24) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   border: 1px solid transparent;
   background-color: #45aaf2;
   color: white;
-  margin-top:25px;
+  margin-top: 25px;
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
@@ -68,7 +68,6 @@ header {
   font-size: 60px;
 }
 
-
 /* nav styles */
 nav ul {
   background-color: #2c3e50;
@@ -76,18 +75,20 @@ nav ul {
   margin: 0 auto;
 }
 
-nav a{
+nav a {
   color: white;
   text-decoration: none;
 }
 
-
 .container {
   margin: 0;
   min-height: 100%;
-  background: #9D50BB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #9D50BB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6E48AA, #9D50BB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6E48AA, #9D50BB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
 }
 
@@ -98,6 +99,7 @@ section img {
   border-top-right-radius: 2px;
 }
 
+iiii
 ul {
   list-style: none;
   margin: 0;
@@ -105,19 +107,35 @@ ul {
   margin-bottom: 10px;
 }
 
-li {
-  font-size: 20px;
+.portfolio {
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.portfolio li {
+  font-size: 1.7rem;
   display: inline-block;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill-list i {
+  font-size: calc(2.5rem + 3vw);
+  display: flex;
 }
 
 h1 {
   margin: 0;
   line-height: 1.5em;
-}
-
-.portfolio {
-  text-align: center;
-  line-height: 1.3em;
 }
 
 .project-head {
@@ -139,7 +157,7 @@ h1 {
   padding-bottom: 5px;
   margin-bottom: 30px;
   border-radius: 2px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .card ul {
@@ -197,12 +215,13 @@ h2 {
 
 .fab, .fas {
   font-size: 24px;
-  padding-top:20px;
+  padding-top: 20px;
+}
 
-}
 .fa-github, .fa-linkedin {
-    margin-right: 25px;
+  margin-right: 25px;
 }
+
 .icons {
   text-align: center;
   padding-bottom: 50px;
@@ -220,78 +239,55 @@ footer {
 
 .p-group {
   background-color: #333333;
-  -webkit-box-shadow: inset 0px 0px 18px 2px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 18px 2px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 18px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
 }
 
 .mobile-show {
   display: static;
 }
 
-.consearch-img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: url('./images/CS1.png') bottom;
-  text-indent: -99999px;
-}
-
-.consearch-img:hover {
-  background-position: 0 0;
-}
-
-
-
-@media only screen and (min-width:784px)  {
+@media only screen and (min-width: 784px) {
   .icons {
     text-align: right;
     padding-right: 100px;
   }
-
   .fab, .fas {
     font-size: 32px;
   }
-
   header {
     padding-left: 80px;
     height: 90vh;
   }
-
   .hide {
     display: none;
   }
-
   .bigAmp {
     font-size: inherit;
   }
-
-  .portfolio {
+  .extraroom {
+    margin-bottom: 10px;
+  }
+  .container h2 {
+    font-size: 36px;
+    padding-bottom: 0.5em;
+  }
+  .container .about {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
     padding-bottom: 2em;
   }
-
-  .portfolio > h2 {
+  .container .portfolio h2 {
     flex: 0 0 100%;
   }
-
-  .card {
+  .container .card {
     width: 30%;
-  }
-
-  .about {
-    margin: 0 auto;
-    text-align: center;
-}
-  .extraroom {
-    margin-bottom: 10px;
-  }
-
-  .container h2 {
-    font-size: 36px;
-    padding-bottom: 0.5em;
   }
 }
